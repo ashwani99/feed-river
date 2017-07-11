@@ -1,0 +1,36 @@
+Comparison between tags of RSS and Atom feed
+---------------------------------------------
+
+RSS		(equivalent tags)	ATOM
+===================================
+                   |
+item			   |		entry
+title			   |		title
+pubDate			   |		updated
+link(HTML tag)	   |		link(href attribute)
+author			   |		author(name sub tag)
+description		   |		content
+
+
+RSS item structure (tags):
+==========================
+
+- item
+	- title
+	- link
+	- description
+	- author
+	- pubDate
+
+Atom entry structure (tags):
+============================
+
+- entry
+	- title
+	- updated
+	- id
+	- content with 'type=html' attribute
+	- link with 'href' attribute
+	- author
+		- name
+		- email

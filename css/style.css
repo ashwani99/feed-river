@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	font-family: Lato;
+}
+
+html, body {
+	height: 100%;
+}
+
+.home {
+	text-align: center;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.jumbotron {
+	margin: 30px auto;
+	min-width: 100%;
+	background-color: white;	
+	/*padding-bottom: 10px;*/
+}
+
+.jumbotron a {
+	text-decoration: none;
+}
+
+#url-box {
+	height: 100%;
+	min-width: 80%;
+	margin-bottom: 2%;
+	padding: 10px;
+}
+
+.submit-btn {
+	min-height: 48px;
+	min-width: 48px;
+	letter-spacing: 2px;
+	margin-top: 20px;
+}
+
+.container-fluid {
+	min-height: 100%;
+	padding: 30px;
+}
+
+.post {
+	padding-top: 30px;
+}
+
+.post h2 {
+	letter-spacing: 1.5px;
+	font-weight: bold;
+}
+
+.post h4 {
+	letter-spacing: 1px;
+	color: #87b5ff;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    left: 0;
+    min-width: 100%;
+    text-align: center;
+    margin-top: 20px;	
+}
