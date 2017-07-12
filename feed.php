@@ -86,7 +86,7 @@
 		if($is_rss) {
 			foreach ($feed as $post) {
 				echo "<h2><a href=" . $post->link . ">" . $post->title . " (" . $post->author . ")" ."</a></h2>";
-				echo "<p>" . format_date($post->pubDate) . "</p>";
+				echo "<h4>" . format_date($post->pubDate) . "</h4>";
 				echo "<p>" . $post->description . "</p>";
 				echo "<br><br><br>";
 			}
