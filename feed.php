@@ -18,7 +18,7 @@
 	function add_http($feed_url) {
 
 		// Check if http is present or not, if not add it
-		if(!preg_match("~^(?:ht)tps?//~i", $feed_url)) {
+		if(!preg_match("~^(?:f|ht)tps?://~i", $feed_url)) {
 			$feed_url = "http://" . $feed_url;
 		}
 
