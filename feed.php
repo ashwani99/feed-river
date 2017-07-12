@@ -2,6 +2,9 @@
 
 	function load_xml($feed_url) {
 
+		// Add http before loading the URL
+		$feed_url = add_http($feed_url);
+
 		// Checks if given URL is a valid RSS/Atom feed. If not, exit with error.
 		$xml = simplexml_load_file($feed_url) or die(
 			"<div class=\"alert alert-danger\" role=\"alert\"\">
@@ -10,6 +13,16 @@
 			</div>");		
 		return $xml;
 	
+	}
+
+	function add_http($feed_url) {
+
+		// Check if http is present or not, if not add it
+		if(!preg_match("~^(?:ht)tps?//~i", $feed_url)) {
+			$feed_url = "http://" . $feed_url;
+		}
+
+		return $feed_url;
 	}
 
 	function load_atom_feed($xml) {
