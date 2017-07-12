@@ -149,7 +149,7 @@
 			</div>
 		</div>
 
-		<footer class="text-primary">
+		<footer class="text-primary footer-feed">
 			<p>
 				Feed-River&nbsp;©
 				<a href="https://github.com/ashwani99">Ashwani Gupta</a>

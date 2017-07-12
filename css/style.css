@@ -40,6 +40,7 @@ html, body {
 
 .container-fluid {
 	min-height: 100%;
+	min-height: 100vh;
 	padding: 30px;
 }
 
@@ -58,10 +59,11 @@ html, body {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom:0;
     left: 0;
     min-width: 100%;
     text-align: center;
     margin-top: 20px;	
 }
+
