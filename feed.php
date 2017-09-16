@@ -116,27 +116,24 @@
 		</div>
 	</header>
 
-	<div class="col-xs-12 col-md-12 col-xs-12"">
-		<div class="container-fluid">
-			<?php 
+	<div class="container-fluid">
+		<?php 
 
-				$url = $_GET['siteurl'];
-				$xml = load_xml($url);
+			$url = $_GET['siteurl'];
+			$xml = load_xml($url);
 
-				$posts = load_feed($xml);
+			$posts = load_feed($xml);
+		?>
+		<div class="post">
+			<?php
+
+				// Display posts
+				($xml->channel) ? display_posts($posts, true) : display_posts($posts, false);
+
+
 			?>
-			<div class="post">
-				<?php
-
-					// Display posts
-					($xml->channel) ? display_posts($posts, true) : display_posts($posts, false);
-
-
-				?>
-			</div>
 		</div>
 	</div>
-
 	<?php require 'templates/footer.php' ?>
 </body>
 </html>
